@@ -57,7 +57,7 @@ jobs:
           aws deploy create-deployment \
           --application-name cicdtest-project \
           --deployment-config-name CodeDeployDefault.AllAtOnce \
-          --deployment-group-name prod \
+          --deployment-group-name cicd-test-prod \
           --file-exists-behavior OVERWRITE \
           --s3-location bucket=project-bucket-v1-deploy,bundleType=zip,key=project-bucket-v1/$GITHUB_SHA.zip \
           --region ap-northeast-2 \
